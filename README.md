@@ -18,10 +18,14 @@ lets take a look inside the src folder
 
 - `utils` -> It contains helper methods, error classes etc.
 
+- `seeders` -> It is used for testing purposes. It puts a seed data (starting data) for your tables. Also it can be used for assigning roles in test, developemnt, prodcution environments.
+
+- `migrations` -> These files are used for version control of your database. These are simple langauge scripts where we write programmatically that how to maintain versions of your database depending upon the unique ids of your database.
 
 ### Setup the project
 
 - Download this template from github and open it in your favorite text editor .
+
 - In the root directory create a `.env` file and add the following env variables
     ```
         PORT=<port number of your choice>
@@ -30,7 +34,13 @@ lets take a look inside the src folder
     ```
         PORT=3000
     ```
-- Inside the `src/config` folder create a file named as `config.json` and paste the following code
+    
+- Go inside the `src` folder and execute the following command: 
+```
+    npx sequelize init
+```
+
+- Or you can manually do the following: Inside the `src/config` folder create a file named as `config.json` and paste the following code
 ```
 {
   "development": {
@@ -56,3 +66,5 @@ lets take a look inside the src folder
   }
 }
 ```
+- If you're setting up your development environment, then write the username of your db and in dialect mention whatever db you are using for your project ex: mysql, mariadb, etc.
+- If you're setting up your production environment, make sure you also replace the host with the hosted db url.
