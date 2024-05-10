@@ -1,10 +1,10 @@
-This is a base node js project template which anyone can use as it has been prepared by keeping some of the most important code principles and project management recommendations. Feel free to change anything.
+This is a base express-mongo project template which anyone can use as it has been prepared by keeping some of the most important code principles and project management recommendations. Feel free to change anything.
 
 `src` -> inside the src folder all the actual source code regarding the project will reside this will not include any kind of tests (you might want to make a separate tests folder)
 
 lets take a look inside the src folder
 
-- `config` -> In this folder, anything and everyhting  regarding any configurations or setup of alibrary or module will be done. For example, setting up dotenv so that we can use the environment variables in a cleaner fashion, which is done in the `server-config.js` file. One more example can be to setup your logging library to help you prepare meaningful logs, so configuration for this library should also be done here.
+- `config` -> In this folder, anything and everyhting  regarding any configurations or setup of a library or module will be done. For example, setting up dotenv so that we can use the environment variables in a cleaner fashion, which is done in the `server.config.js` file. All the database related configurations are also done here.
 
 - `routes` -> In the routes folder, we register a route and the corresponding middleware and controllers to it. In the routes foulder there are folders named v1, v2, .... for api versioning.
 
