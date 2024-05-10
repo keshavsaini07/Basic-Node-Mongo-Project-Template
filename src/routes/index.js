@@ -1,11 +1,9 @@
-// the routes contains different folders like v1, v2,... for api versioning containing different versions of api
+import express from 'express';
 
-const express = require('express');
-
-const v1Routes = require('./v1');
+import v1Routes from './v1/index.js'
 
 const router = express.Router();
 
 router.use('/v1', v1Routes);
 
-module.exports = router;
+export default router;

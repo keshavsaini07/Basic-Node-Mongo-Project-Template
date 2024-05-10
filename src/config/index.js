@@ -1,4 +1,6 @@
-module.exports = {
-    ServerConfig : require('./server-config'),
-    Logger : require('./logger-config')
+import ServerConfig from "./server-config.js";
+import connectDB from "./db.connect.js";
+
+export{
+    ServerConfig, connectDB
 }
