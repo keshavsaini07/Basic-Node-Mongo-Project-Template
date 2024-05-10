@@ -26,7 +26,9 @@ lets take a look inside the src folder
 
 - Download this template from github and open it in your favorite text editor .
 
-- In the root directory create a `.env` file and add the following env variables
+- In the root directory create a `.env` file:
+
+- Add the PORT variable
     ```
         PORT=<port number of your choice>
     ```
@@ -35,3 +37,11 @@ lets take a look inside the src folder
         PORT=3000
     ```
     
+- Add the MONGO_URL variable for connecting to the mongo database
+  ```
+      MONGO_URL=<url of your mongodb>
+  ```
+  ex:
+  ```
+      MONGO_URL="mongodb://127.0.0.1:27017/database_name"
+  ```
