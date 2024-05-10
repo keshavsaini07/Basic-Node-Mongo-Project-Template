@@ -35,36 +35,3 @@ lets take a look inside the src folder
         PORT=3000
     ```
     
-- Go inside the `src` folder and execute the following command: 
-```
-    npx sequelize init
-```
-
-- Or you can manually do the following: Inside the `src/config` folder create a file named as `config.json` and paste the following code
-```
-{
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
-```
-- If you're setting up your development environment, then write the username of your db and in dialect mention whatever db you are using for your project ex: mysql, mariadb, etc.
-- If you're setting up your production environment, make sure you also replace the host with the hosted db url.
